@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Sign Up</title>
+    <style>body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(120deg, #2980b9, #8e44ad);
+    }
+    
+    .container {
+        background-color: #fff;
+        padding: 80px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    label {
+        margin-top: 10px;
+    }
+    
+    input {
+        padding: 8px;
+        margin: 5px 0 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .sin{
+        display: flex;
+        padding: 20px;
+        margin: auto;
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .sign {
+        padding: 10px;
+        background-color: #2980b9;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .sign:hover {
+        background-color: #25a3fd;
+    }
+
+    .back{
+        display: flex;
+        padding: 20px;
+        margin: auto;
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .kembali{
+        padding: 10px;
+        width: 300px;
+        background-color: #8e44ad;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .kembali:hover{
+        background-color: #b759df;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="signupForm" class="form">
+            <h2>Sign Up</h2>
+            <label for="newUsername">New Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>   
+        </form>
+        <form action="mainpage.html" class="sin">
+            <button type="submit" class="sign">Sign Up</button> 
+        </form>
+        <form action="index.html" class="back">
+                <button type="submit" class="kembali"> Kembali</button>
+        </form>
+    </div>
+</body>
+</html>

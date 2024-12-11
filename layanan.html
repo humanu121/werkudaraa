@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+    <link rel="stylesheet" href="mainpage/style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Ganti warna latar belakang sesuai keinginan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Menyusun elemen secara vertikal */
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 100vh;
+        }
+
+        .top-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Warna putih transparan pada kotak */
+            width: 1200px;
+            padding: 10px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan dimensi */
+            margin-bottom: 6%; /* Menambahkan batas di bawah kotak */
+            display: flex;
+            align-items: center;
+            margin-top: -1%; /* Menambahkan batas di atas kotak */
+        }
+
+        .landing-container {
+            background-color: rgba(222, 169, 249, 0.396); /* Warna putih transparan pada kotak */
+            width: 1200px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan dimensi */
+            display: flex;
+            align-items: center;
+            transform: translateY(-25%);
+            margin-top: -3%;
+            margin-bottom: 20px; /* Menambahkan batas di bawah kotak */
+        }
+
+        .icon-container,
+        .image-container {
+            flex-shrink: 0; /* Menghindari pemendekan ikon dan gambar */
+            margin-right: 20px; /* Jarak antara ikon/gambar dan teks */
+        }
+
+        .text-container,
+        .image-text {
+            flex-grow: 1; /* Memastikan teks dapat mengisi sisa ruang */
+        }
+
+        .box{
+            margin-right: 45%;
+            margin-top: -4%;
+            margin-bottom: 2%;
+        }
+
+        .image-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Warna putih transparan pada kotak */
+            border: 3px solid purple;
+            width: 500px;
+            padding: 10px;
+            border-radius: 10%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan dimensi */
+            margin-bottom: 2%; /* Menambahkan batas di bawah kotak */
+            display: flex;
+            align-items: center;
+            margin-top: 1;
+        }
+
+        .extra-image {
+            width: 300px; /* Sesuaikan ukuran gambar tambahan sesuai kebutuhan */
+            border-radius: 8px;
+            transform: translateY(-120%);
+            margin-left: 50%; /* Menambahkan jarak antara gambar dan kotak di sebelah kirinya */
+        }
+
+        .website{
+            padding: 0px;
+            border-radius: 10%;
+            margin-top: -15%;
+            
+            margin-right: 60%;
+            transform: translateY(-200%);
+
+        }
+        .web{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        .web img{
+            margin-right: 5%;
+        }
+
+        .person{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-right: 20%;
+            margin-top: -5%;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .person img{
+            margin-right: 8%;
+        }
+        .survey{
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 30px 0;
+            padding: 10px;
+            width: 300px;
+            border-radius: 20%;
+            text-align: center;
+            font-size: 16px;
+            color: #666666;
+            margin-left: 60%;
+            transform: translateY(-400%);
+            margin-right: 8%;
+            margin-top: -8%;
+        }
+
+        .survey a{
+            color: #2691d9;
+            text-decoration: underline;
+
+        }
+
+        .kembali{
+            display: flex;
+            padding: 20px;
+            margin: auto;
+            max-width: 300px;
+            flex-direction: column;
+            transform: translateY(-300%);
+            margin-left: 64%;
+        }
+
+        .back{
+            padding: 10px;
+            width: 300px;
+            background-color: #df5966;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back:hover{
+            background-color: red;
+        }
+
+        .bottom {
+            background-color: rgba(255, 255, 255, 0.8); /* Warna putih transparan pada kotak */
+            width: 1200px;
+            padding: 10px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan dimensi */
+            display: flex;
+            align-items: center;
+            margin-top: -19%; /* Menambahkan batas di atas kotak */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Youth<span>Well</span>Space</a>
+        <div class="navbar-nav">
+            <a href="mainpage.html">Beranda</a>
+            <a href="layanan.html">Forum </a>
+            <a href="cobafix.html">Konten Edukatif</a>
+            <a href="tentang.html">Tentang Kami</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id="menu"> <i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <div class="top-container"></div>
+<br><br><br><br><br>
+    <div class="landing-container">
+        <div class="icon-container">
+            <img src="image/announcement.png" width="100px" alt="">
+        </div>
+            <div class="text-container">
+                <h1>Layanan</h1>
+                <p>Ungkapkan perasaanmu disini dengan aman</p>
+            </div>
+
+    </div>
+
+    <div class="box">
+    <!-- Kotak ke-3 -->
+    <div class="image-box">
+        <div class="image-container">
+            <img src="image/information-button.png" width="100px" alt="Gambar 1">
+        </div>
+        <a href="./informasi.html">
+            <div class="image-text">
+                <h2>Information</h2>
+            </div>
+        </a>
+    </div>
+
+    <!-- Kotak ke-4 -->
+    <div class="image-box">
+        <div class="image-container">
+            <img src="image/contact-book.png" width="100px" alt="Gambar 2">
+        </div>
+        <div class="image-text">
+            <h2>Narahubung</h2>
+        </div>
+    </div>
+
+    <!-- Kotak ke-5 -->
+    <div class="image-box">
+        <div class="image-container">
+            <img src="image/smansawi-removebg-preview.png" width="150px" alt="Gambar 3">
+        </div>
+        <div class="image-text">
+            <h2>Smansawi Speak Up</h2>
+        </div>
+    </div>
+    </div>
+
+    <img src="image/perasaan.png" alt="Gambar Samping" class="extra-image">
+
+    <div class="website">
+        <div class="web">
+            <img src="image/globe.png" width="30px" alt="">
+            <p>www.youthwellspace.com</p>
+        </div>
+        <div class="person">
+            <img src="image/man.png" width="30px" alt="">
+            <p>+6287840482786</p>
+        </div>    
+    </div>
+    <div class="survey">
+            <a href="#"> https://surveytentangdirimu.com/form </a>
+        </div><form action="mainpage.html" class="kembali">
+            <button type="submit" class="back">Kembali</button>
+        </form>
+
+        <div class="bottom">
+        </div>
+</body>
+</html>
